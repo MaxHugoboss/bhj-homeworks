@@ -6,12 +6,12 @@
         // Функция для запуска таймера
         function startCountdown(seconds) {
             // Получаем элемент, в который будем выводить таймер
-            const timerDisplay = document.getElementById('timerDisplay');
+            const timer = document.getElementById('timer');
 
             // Функция для уменьшения значения таймера и проверки окончания отсчета
             function updateTimer() {
                 // Выводим текущее значение таймера на страницу
-                timerDisplay.innerText = seconds;
+                timer.innerText = seconds;
 
                 // Проверяем, закончился ли отсчет
                 if (seconds <= 0) {
